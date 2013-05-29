@@ -2,7 +2,7 @@ Arduino-REST-API
 ================
 
 PHP REST API Server for Arduino
-<br><br>
+
 Overview
 --------
 
@@ -10,14 +10,14 @@ Overview
 2. Provided functionality to manipulate Arduino I/O pins through HTTP protocol
 3. Supported Arduino functions are digitalRead, digitalWrite, analogRead and analogWrite
 4. Use JSON as the data-interchange-format
-<br><br>
+
 Requirement
 --------
 
 1. Apache Web server with mod_rewrite enabled
 2. PHP 5.4
 3. Supported Arduino functions are digitalRead, digitalWrite, analogRead and analogWrite
-<br><br>
+
 Getting Started
 --------
 
@@ -41,10 +41,9 @@ Another required step is rewrite the url using .htaccess file.
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php/$1 [L]
-<br>
+
 How to use
 --------
-<br>
 
 **Read Input pin state**
 You need to create HTTP Request(GET) using this URL format:
@@ -89,7 +88,6 @@ The POST Data :
 
 Example JSON Data
 --------  
-<br>
 
     {
         status : {
@@ -101,7 +99,7 @@ Example JSON Data
             value : 512
         }
     }
-<br>
+
 Credits
 -------
 
